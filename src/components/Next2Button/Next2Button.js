@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {withRouter} from 'react-router-dom';
 
+
 class Next2Button extends Component {
 
   goToNext2 = () => {
@@ -17,4 +18,5 @@ class Next2Button extends Component {
 }
 
 // export default Next2Button;
+// export default connect(mapReduxStateToProps)(Home);
 export default withRouter(Next2Button);

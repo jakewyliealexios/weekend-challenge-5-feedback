@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import ReturnButton from '../ReturnButton/ReturnButton';
 import AdminButton from '../AdminButton/AdminButton';
+
+const mapReduxStateToProps = ( reduxState ) => ({ reduxState });
 
 class Next5 extends Component {
 
@@ -19,4 +22,4 @@ class Next5 extends Component {
   }
 }
 
-export default Next5;
+export default connect(mapReduxStateToProps)(Next5);

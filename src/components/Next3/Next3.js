@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import Next4Button from '../Next4Button/Next4Button'
+
+const mapReduxStateToProps = ( reduxState ) => ({ reduxState });
 
 class Next3 extends Component {
 
@@ -15,4 +18,4 @@ class Next3 extends Component {
   }
 }
 
-export default Next3;
+export default connect(mapReduxStateToProps)(Next3);

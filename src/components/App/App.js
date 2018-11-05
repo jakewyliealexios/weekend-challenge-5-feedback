@@ -12,6 +12,8 @@ import Next4 from '../Next4/Next4.js'
 import Next5 from '../Next5/Next5.js'
 import Admin from '../Admin/Admin.js'
 
+const mapReduxStateToProps = ( reduxState ) => ({ reduxState });
+
 class App extends Component {
 
   // When the App is first loaded get our stuff
@@ -56,4 +58,4 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+export default connect(mapReduxStateToProps)(App);

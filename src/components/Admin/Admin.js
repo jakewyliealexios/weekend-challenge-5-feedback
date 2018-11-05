@@ -7,7 +7,7 @@ import ReturnButton from '../ReturnButton/ReturnButton';
 
 const mapReduxStateToProps = ( reduxState ) => ({ reduxState });
 
-class Home extends Component {
+class Admin extends Component {
 
       // When the App is first loaded get our stuff
   componentDidMount() {
@@ -27,9 +27,9 @@ class Home extends Component {
       })
   }
 
-
     deleteFeedback = (id) => {
         // call axios
+        alert('Deleted Feedback!')
         axios({
           method: 'DELETE',
           url: `/feedback/${id}`
@@ -75,4 +75,4 @@ class Home extends Component {
   }
 }
 
-export default connect(mapReduxStateToProps)(Home);
+export default connect(mapReduxStateToProps)(Admin);
